@@ -4,16 +4,15 @@
 //rootMargin, margen alrededor del elemento seleccionado en el root, por defecto es todo 0
 //El threshold, indica a que porcentaje de visibilidad del elemento target, la funcion del observer deberia ser ejecutada.
 
-const section = document.querySelector("#sobre-mi");
 const navLinks = document.querySelectorAll(".navbar__list-item a");
+const socialLinks = document.querySelectorAll(".social__list-item a");
 
-const cambiarClase = (entries) => {
+const cambiarClase = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {
       navLinks.forEach((link) => {
         link.classList.add("white-text", "white-border");
       });
-      const socialLinks = document.querySelectorAll(".social__list-item");
       socialLinks.forEach((link) => {
         link.style.color = "#82df8d";
       });
@@ -21,7 +20,6 @@ const cambiarClase = (entries) => {
       navLinks.forEach((link) => {
         link.classList.remove("white-text", "white-border");
       });
-      const socialLinks = document.querySelectorAll(".social__list-item");
       socialLinks.forEach((link) => {
         link.style.color = "rgba(11, 11, 11, 0.7)";
       });
@@ -33,6 +31,15 @@ const options = {
   threshold: [0.1, 0.8],
 };
 
-let observer = new IntersectionObserver(cambiarClase, options);
+const observarSeccion = (id) => {
+  const section = document.querySelector(`#${id}`);
+  let observer = new IntersectionObserver(
+    (entries) => cambiarClase(entries, observer),
+    options
+  );
+  observer.observe(section);
+};
 
-observer.observe(section);
+observarSeccion("sobre-mi");
+// observarSeccion("proyectos");
+// observarSeccion("contacto");
