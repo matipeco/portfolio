@@ -98,6 +98,14 @@ h6 {
   border: 1px solid black;
 }
 
+.navbar__list-item a.white-text {
+  color: #a0d4a6;
+  border: 1px solid transparent;
+}
+
+.navbar__list-item a.white-border:hover {
+  border: 1px solid #a0d4a6;
+}
 .hero {
   flex: 1;
   display: flex;
@@ -135,12 +143,11 @@ h6 {
   color: rgba(11, 11, 11, 0.7);
 }
 
-.social__list-item:hover {
-  color: black;
-}
-
 .social__list-item a {
   color: currentColor;
+}
+.social__list-item a:hover {
+  opacity: 1;
 }
 
 .section__sobre-mi {
