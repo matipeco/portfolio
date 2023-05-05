@@ -75,7 +75,7 @@ h6 {
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.01);
   letter-spacing: 2px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(34, 34, 34, 0.05);
 }
 .navbar__list-item {
   margin-right: 3rem;
@@ -85,7 +85,7 @@ h6 {
 .navbar__list-item a {
   display: inline-block;
   font-size: 16px;
-  color: black;
+  color: #222222;
   text-decoration: none;
   letter-spacing: 3px;
   box-sizing: border-box;
@@ -114,6 +114,7 @@ h6 {
   align-items: center;
   padding: 0 30px;
   text-align: center;
+  color: #222222;
 }
 
 .hero__title {
@@ -130,7 +131,7 @@ h6 {
 .social {
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   right: 3rem;
   list-style: none;
   font-size: 4rem;
@@ -139,12 +140,12 @@ h6 {
 .social__list-item {
   margin-bottom: 3rem;
   font-size: 3.5rem;
-  transition: 300ms ease-out;
-  color: rgba(11, 11, 11, 0.7);
 }
 
 .social__list-item a {
-  color: currentColor;
+  transition: 300ms ease-out;
+  color: #222222;
+  opacity: 0.7;
 }
 .social__list-item a:hover {
   opacity: 1;
@@ -186,10 +187,48 @@ h6 {
   background-color: var(----gris-oscuro);
   width: 100%;
   min-height: 100vh;
-  padding-top: 40px;
+  padding: 40px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+}
+.section__container {
+  max-width: 108rem;
+  margin: 0 auto;
 }
 
-/* .titulo-habilidades {
-  display: inline;
-  width: 100%;
-} */
+.titulo-habilidades {
+  line-height: 1.2;
+  /* left: 32rem; */
+  /* margin-left: 10px; */
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+.titulo-habilidades::after {
+  content: "";
+  display: block;
+  background-color: currentColor;
+  height: 0.5rem;
+  margin-top: 1rem;
+}
+.container-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.container-icons article {
+  margin: 2rem 8rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 15rem;
+}
+.container-icons p {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 10ch;
+  color: #222222;
+}
