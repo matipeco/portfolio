@@ -41,5 +41,4 @@ const observarSeccion = (id) => {
 };
 
 observarSeccion("sobre-mi");
-// observarSeccion("proyectos");
-// observarSeccion("contacto");
+observarSeccion("proyectos");
