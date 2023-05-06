@@ -208,7 +208,7 @@ h6 {
   content: "";
   display: block;
   background-color: currentColor;
-  height: 0.5rem;
+  height: 0.3rem;
   margin-top: 1rem;
 }
 .container-icons {
@@ -231,4 +231,45 @@ h6 {
   text-align: center;
   width: 10ch;
   color: #222222;
+}
+
+.section__proyectos {
+  width: 100%;
+  background-color: #222222;
+  min-height: 100vh;
+  padding: 40px;
+  color: #a0d4a6;
+  display: flex;
+  justify-content: center;
+}
+
+.proyectos-titulo {
+  margin-top: 10rem;
+  text-transform: uppercase;
+  font-size: 5rem;
+  mix-blend-mode: color-dodge;
+}
+
+.section__contacto {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #222222;
+}
+.contacto-titulo {
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin-top: 10rem;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
 }
