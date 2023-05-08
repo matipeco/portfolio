@@ -200,15 +200,41 @@
       </section>
       <section class="section__contacto" id="contacto">
         <h2 class="contacto-titulo">Contacto</h2>
-        <form action="" onsubmit="" class="formulario">
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" />
-          <label for="email">Email</label>
-          <input type="text" id="email" />
-          <label for="mensaje">Mensaje</label>
-          <input type="text" id="mensaje" />
-          <button>Enviar</button>
+        <form action="" class="formulario" id="form">
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          />
+
+          <input
+            name="email"
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+
+          <textarea
+            required
+            name="mensaje"
+            id="mensaje"
+            cols="45"
+            rows="5"
+            placeholder="Mensaje"
+          ></textarea>
+
+          <input type="submit" id="button" value="Enviar" class="button" />
         </form>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          emailjs.init("fyJY6XUVWYrnWWMEL");
+        </script>
       </section>
     </main>
     <script src="script.js"></script>
