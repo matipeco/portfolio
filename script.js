@@ -42,3 +42,29 @@ const observarSeccion = (id) => {
 
 observarSeccion("sobre-mi");
 observarSeccion("proyectos");
+
+const btn = document.getElementById("button");
+const inputs = form.querySelectorAll("input, textarea");
+
+document.getElementById("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  btn.value = "Enviando...";
+
+  const serviceID = "default_service";
+  const templateID = "template_vtkmpi8";
+
+  emailjs.sendForm(serviceID, templateID, this).then(
+    () => {
+      btn.value = "Enviar mensaje";
+      inputs.forEach((input) => {
+        input.value = "";
+      });
+      alert("Mensaje enviado exitosamente!");
+    },
+    (err) => {
+      btn.value = "Enviar";
+      alert(JSON.stringify(err));
+    }
+  );
+});
