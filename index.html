@@ -25,54 +25,62 @@
 
   <body>
     <header class="header">
-      <nav class="navbar">
-        <ul class="navbar__list">
-          <li class="navbar__list-item">
-            <a href="#sobre-mi">Sobre mí</a>
+      <section id="header">
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__list-item">
+              <a class="cambia-color" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="cambia-color" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="cambia-color" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="navbar__list-item contacto">
+              <a class="cambia-color" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <!-- <button class="navbar__theme-button">
+            <i class="fa-solid fa-lightbulb"></i>
+          </button> -->
+        </nav>
+
+        <div class="hero">
+          <h1 class="hero__title">MATIAS PECORALE</h1>
+          <p class="hero__description">Desarrollador full-stack</p>
+        </div>
+
+        <ul class="social">
+          <li class="social__list-item">
+            <a
+              class="cambia-color"
+              href="mailto:matiaspecorale@gmail.com"
+              aria-label="Contactarse por correo electrónico"
+            >
+              <i class="fa-regular fa-envelope"></i>
+            </a>
           </li>
-          <li class="navbar__list-item">
-            <a href="#habilidades">Habilidades</a>
+          <li class="social__list-item">
+            <a
+              class="cambia-color"
+              href="https://github.com/matipeco"
+              aria-label="Perfil de Github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
           </li>
-          <li class="navbar__list-item">
-            <a href="#proyectos">Proyectos</a>
-          </li>
-          <li class="navbar__list-item contacto">
-            <a href="#contacto">Contacto</a>
+          <li class="social__list-item">
+            <a
+              class="cambia-color"
+              href="https://linkedin.com/in/matiaspecorale"
+              aria-label="Perfil de Linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </li>
         </ul>
-        <button class="navbar__theme-button">
-          <i class="fa-solid fa-lightbulb"></i>
-        </button>
-      </nav>
-
-      <div class="hero">
-        <h1 class="hero__title">MATIAS PECORALE</h1>
-        <p class="hero__description">Desarrollador full-stack</p>
-      </div>
-
-      <ul class="social">
-        <li class="social__list-item">
-          <a
-            href="mailto:matiaspecorale@gmail.com"
-            aria-label="Contactarse por correo electrónico"
-          >
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-        </li>
-        <li class="social__list-item">
-          <a href="https://github.com/matipeco" aria-label="Perfil de Github">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-        <li class="social__list-item">
-          <a
-            href="https://linkedin.com/in/matiaspecorale"
-            aria-label="Perfil de Linkedin"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
+      </section>
     </header>
 
     <main class="main">
@@ -93,6 +101,7 @@
             usuario intuitiva y amigable, sin dejar de lado la creatividad y las
             nuevas tendencias.
           </p>
+          <a href="#"></a>
         </div>
       </section>
       <section class="section__habilidades" id="habilidades">
@@ -197,15 +206,66 @@
       </section>
       <section class="section__proyectos" id="proyectos">
         <h2 class="proyectos-titulo">Proyectos</h2>
+        <div class="container-cards">
+          <article>
+            <img src="./assets/images/challenge-1.png" alt="" />
+            <h3 class="card-title">Challenge Aerolab</h3>
+            <p>
+              Challenge técnico para la empresa Aerolab. Consiste en crear una
+              SPA responsive, donde el usuario puede cargar sus puntos
+            </p>
+            <a href="">Visitar Sitio</a>
+            <a href="">Ver Repositorio</a>
+          </article>
+          <article class="slider">
+            <img src="./assets/images/regalos.png" alt="" />
+            <h3 class="card-title">Christmas Gifts</h3>
+            <p>
+              Aplicacion donde el usuario puede agregar regalos a una lista,
+              editar, duplicar, eliminar un regalo en particular o la lista
+              complea.
+            </p>
+            <a href="">Visitar Sitio</a>
+            <a href="">Ver Repositorio</a>
+          </article>
+          <article>
+            <img src="./assets/images/pf.png" alt="" />
+            <h3 class="card-title">appdoptame</h3>
+            <p>
+              Aplicacion donde el usuario puede agregar regalos a una lista,
+              editar, duplicar, eliminar un regalo en particular o la lista
+              complea.
+            </p>
+            <a href="">Visitar Sitio</a>
+            <a href="">Ver Repositorio</a>
+          </article>
+          <!-- <article>
+            <img src="./assets/images/pokemon.png" alt="" />
+            <h3 class="card-title">pokemon app</h3>
+            <p>
+              Aplicacion donde el usuario puede agregar regalos a una lista,
+              editar, duplicar, eliminar un regalo en particular o la lista
+              complea.
+            </p>
+            <a href="">Visitar Sitio</a>
+            <a href="">Ver Repositorio</a>
+          </article> -->
+        </div>
       </section>
       <section class="section__contacto" id="contacto">
         <h2 class="contacto-titulo">Contacto</h2>
-        <form action="" class="formulario" id="form">
+        <form
+          action=""
+          class="formulario"
+          id="form"
+          aria-label="formulario de contacto"
+        >
           <input
             type="text"
             id="nombre"
             name="nombre"
             placeholder="Nombre"
+            aria-label="nombre"
             required
           />
 
@@ -213,12 +273,14 @@
             name="email"
             type="email"
             id="email"
+            aria-label="email"
             placeholder="Email"
             required
           />
 
           <textarea
             required
+            aria-label="mensaje"
             name="mensaje"
             id="mensaje"
             cols="45"
@@ -226,7 +288,13 @@
             placeholder="Mensaje"
           ></textarea>
 
-          <input type="submit" id="button" value="Enviar" class="button" />
+          <input
+            type="submit"
+            id="button"
+            value="Enviar"
+            class="button"
+            aria-label="boton para enviar mensaje"
+          />
         </form>
         <script
           type="text/javascript"
