@@ -267,9 +267,42 @@ h6 {
 }
 
 .formulario {
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.formulario input,
+textarea {
+  width: 90%;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.5rem;
+  color: rgb(235, 255, 216);
+}
+input {
+  margin: 0 0 1.5rem 0;
+  padding: 1.3rem;
+  background-color: rgba(34, 34, 34, 0.783);
+}
+textarea {
+  padding: 1.3rem;
+  margin-bottom: 3rem;
+  background-color: rgba(34, 34, 34, 0.783);
+}
+.button {
+  background-color: rgba(34, 34, 34, 0.557);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: rgb(235, 255, 216);
+  font-family: "Unbounded", "Noto Sans", sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 12px rgba(50, 50, 50, 0.208);
+  transition: 300ms ease-out;
+}
+.button:hover {
+  background-color: rgba(75, 75, 75, 0.557);
 }
