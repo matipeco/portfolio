@@ -108,7 +108,7 @@
         <div class="section__container">
           <h2 id="habilidades" class="titulo-habilidades">Habilidades</h2>
           <div class="container-icons">
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/html5.svg"
                 alt=""
@@ -117,19 +117,19 @@
               />
               <p>HTML</p>
             </article>
-            <article>
+            <article id="iconos">
               <img src="./assets/icons/css.svg" alt="" width="76" />
               <p>CSS</p>
             </article>
-            <article>
+            <article id="iconos">
               <img src="./assets/icons/js.svg" alt="" width="80" height="80" />
               <p>Javascript</p>
             </article>
-            <article>
+            <article id="iconos">
               <img src="./assets/icons/ts.svg" alt="" width="76" />
               <p>Typescript</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/react.svg"
                 alt=""
@@ -138,7 +138,7 @@
               />
               <p>React</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/next.svg"
                 alt=""
@@ -147,7 +147,7 @@
               />
               <p>Next.js</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/redux.svg"
                 alt=""
@@ -156,7 +156,7 @@
               />
               <p>Redux</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/express.svg"
                 alt=""
@@ -165,7 +165,7 @@
               />
               <p>Express</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/node.svg"
                 alt=""
@@ -174,7 +174,7 @@
               />
               <p>Node.js</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/postgresql.svg"
                 alt=""
@@ -183,7 +183,7 @@
               />
               <p>PostgreSQL</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/styled.svg"
                 alt=""
@@ -192,7 +192,7 @@
               />
               <p>Styled-Components</p>
             </article>
-            <article>
+            <article id="iconos">
               <img
                 src="./assets/icons/mongo.svg"
                 alt=""
@@ -211,11 +211,21 @@
             <img src="./assets/images/challenge-1.png" alt="" />
             <h3 class="card-title">Challenge Aerolab</h3>
             <p>
-              Challenge técnico para la empresa Aerolab. Consiste en crear una
-              SPA responsive, donde el usuario puede cargar sus puntos
+              Challenge técnico para la empresa Aerolab.SPA responsive, donde el
+              usuario puede cargar puntos y canjearlos por productos. Pueden
+              aplicarse filtros y ordenamientos.
             </p>
-            <a href="">Visitar Sitio</a>
-            <a href="">Ver Repositorio</a>
+
+            <a
+              class="card-buttons"
+              href="https://aerolab-challenge-ts.vercel.app/"
+              >Visitar Sitio</a
+            >
+            <a
+              class="card-buttons"
+              href="https://github.com/matipeco/aerolab-challenge"
+              >Ver Repositorio</a
+            >
           </article>
           <article class="slider">
             <img src="./assets/images/regalos.png" alt="" />
@@ -223,33 +233,50 @@
             <p>
               Aplicacion donde el usuario puede agregar regalos a una lista,
               editar, duplicar, eliminar un regalo en particular o la lista
-              complea.
+              completa. La hice con el fin de practicar Typescript,
+              Styled-componentes y React.
             </p>
-            <a href="">Visitar Sitio</a>
-            <a href="">Ver Repositorio</a>
+            <a
+              class="card-buttons"
+              href="https://christmas-gifts-matiaspecorale.vercel.app/"
+              >Visitar Sitio</a
+            >
+            <a class="card-buttons" href="https://github.com/matipeco/Regalos"
+              >Ver Repositorio</a
+            >
           </article>
           <article>
             <img src="./assets/images/pf.png" alt="" />
             <h3 class="card-title">appdoptame</h3>
             <p>
-              Aplicacion donde el usuario puede agregar regalos a una lista,
-              editar, duplicar, eliminar un regalo en particular o la lista
-              complea.
+              Página web donde Asociaciones Protectoras de Animales pueden
+              publicar mascotas que deseen poner en adopción. Los usuarios
+              pueden registrarse y realizar adopciones y donaciones. Este
+              proyecto forma parte del Proyecto Final del bootcamp de Henry. Se
+              desarrolló en conjunto con otros 5 compañeros.
             </p>
-            <a href="">Visitar Sitio</a>
-            <a href="">Ver Repositorio</a>
+            <a
+              href="https://github.com/matipeco/deployAppdoptame"
+              class="card-buttons"
+              >Ver Repositorio</a
+            >
           </article>
-          <!-- <article>
+          <article>
             <img src="./assets/images/pokemon.png" alt="" />
             <h3 class="card-title">pokemon app</h3>
             <p>
-              Aplicacion donde el usuario puede agregar regalos a una lista,
-              editar, duplicar, eliminar un regalo en particular o la lista
-              complea.
+              SPA donde se visualizan todos los personajes. Pueden aplicarse
+              filtros, ordenamientos y buscar un pokemon en particular, además
+              de la posibilidad de crear un personaje personalizado. Este
+              proyecto forma parte del Proyecto Individual del bootcamp de
+              Henry.
             </p>
-            <a href="">Visitar Sitio</a>
-            <a href="">Ver Repositorio</a>
-          </article> -->
+            <a
+              href="https://github.com/matipeco/PI-final-Pokemon"
+              class="card-buttons"
+              >Ver Repositorio</a
+            >
+          </article>
         </div>
       </section>
       <section class="section__contacto" id="contacto">
@@ -306,5 +333,18 @@
       </section>
     </main>
     <script src="script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll("#iconos"), {
+        max: 40,
+        speed: 3000,
+      });
+      VanillaTilt.init(document.querySelectorAll("article"), {
+        max: 5,
+        speed: 5000,
+        glare: true,
+        "max-glare": 0.2,
+      });
+    </script>
   </body>
 </html>
