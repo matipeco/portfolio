@@ -157,27 +157,24 @@ observarProyectos();
 // observarSeccion("proyectos");
 // observarSeccion("contacto");
 
-const btn = document.getElementById("button");
-const inputs = form.querySelectorAll("input, textarea");
+const btn = document.getElementById("form-span");
 
-document.getElementById("form").addEventListener("submit", function (event) {
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  btn.value = "Enviando...";
+  btn.textContent = "Enviando...";
 
   const serviceID = "default_service";
   const templateID = "template_vtkmpi8";
 
   emailjs.sendForm(serviceID, templateID, this).then(
     () => {
-      btn.value = "Enviar mensaje";
-      inputs.forEach((input) => {
-        input.value = "";
-      });
+      btn.textContent = "Enviar mensaje";
+      form.reset();
       alert("Mensaje enviado exitosamente!");
     },
     (err) => {
-      btn.value = "Enviar";
+      btn.textContent = "Enviar mensaje";
       alert(JSON.stringify(err));
     }
   );

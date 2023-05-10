@@ -42,9 +42,6 @@
               <a class="cambia-color" href="#contacto">Contacto</a>
             </li>
           </ul>
-          <!-- <button class="navbar__theme-button">
-            <i class="fa-solid fa-lightbulb"></i>
-          </button> -->
         </nav>
 
         <div class="hero">
@@ -316,23 +313,19 @@
             placeholder="Mensaje"
           ></textarea>
 
-          <input
-            type="submit"
-            id="button"
-            value="Enviar"
-            class="button"
-            aria-label="boton para enviar mensaje"
-          />
+          <button class="button" type="submit" value="Enviar">
+            <span class="text-button" id="form-span">Enviar mensaje</span>
+          </button>
         </form>
-        <script
-          type="text/javascript"
-          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-        ></script>
-        <script type="text/javascript">
-          emailjs.init("fyJY6XUVWYrnWWMEL");
-        </script>
       </section>
     </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("fyJY6XUVWYrnWWMEL");
+    </script>
     <script src="script.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
