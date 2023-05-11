@@ -8,6 +8,17 @@ const btn = document.getElementById("form-span");
 let screenWidth = window.innerWidth || document.documentElement.clientWidth;
 
 if (screenWidth > 750) {
+  VanillaTilt.init(document.querySelectorAll("#iconos"), {
+    max: 40,
+    speed: 3000,
+  });
+  VanillaTilt.init(document.querySelectorAll("article"), {
+    max: 5,
+    speed: 5000,
+    glare: true,
+    "max-glare": 0.2,
+  });
+
   const cambiarClase = (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {

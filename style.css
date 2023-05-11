@@ -368,6 +368,14 @@ textarea {
   background-color: rgba(34, 34, 34, 0.783);
   font-family: inherit;
 }
+
+input::placeholder,
+textarea::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+}
+
 .button {
   border-radius: 3px;
   background-color: rgba(34, 34, 34, 0.783);
@@ -587,14 +595,14 @@ textarea {
   .formulario input,
   textarea {
     margin-bottom: 3rem;
-    width: 80%;
+    width: 100%;
   }
   textarea {
     height: 20rem;
     margin-bottom: 4rem;
   }
   .button {
-    width: 80%;
+    width: 100%;
     padding: 1.7rem;
     font-size: 1.5rem;
     background-color: #222222e6;
