@@ -8,7 +8,6 @@ const navLinks = document.querySelectorAll(".navbar__list-item a");
 const socialLinks = document.querySelectorAll(".social__list-item a");
 
 const cambiarClase = (entries, observer) => {
-  console.log(entries);
   entries.forEach((entry) => {
     if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {
       navLinks.forEach((link) => {
@@ -178,4 +177,22 @@ form.addEventListener("submit", function (event) {
       alert(JSON.stringify(err));
     }
   );
+});
+
+const btnMenu = document.getElementById("btn-menu");
+const navbar = document.getElementById("navbar");
+const btnClose = document.getElementById("btn-menu-close");
+
+btnMenu.addEventListener("click", () => {
+  navbar.classList.add("open");
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navbar.classList.remove("open");
+  });
+});
+
+btnClose.addEventListener("click", () => {
+  navbar.classList.remove("open");
 });
