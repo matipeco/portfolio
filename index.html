@@ -27,7 +27,14 @@
   <body>
     <header class="header">
       <section id="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
+          <button
+            aria-label="cerrar menú"
+            id="btn-menu-close"
+            class="btn-menu-close"
+          >
+            x
+          </button>
           <ul class="navbar__list">
             <li class="navbar__list-item">
               <a class="cambia-color" href="#sobre-mi">Sobre mí</a>
@@ -41,9 +48,29 @@
             <li class="navbar__list-item contacto">
               <a class="cambia-color" href="#contacto">Contacto</a>
             </li>
+            <li class="navbar__list-item">
+              <a class="cambia-color" href="mailto:matiaspecorale@gmail.com">
+                Enviar email
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a class="cambia-color" href="https://github.com/matipeco">
+                Perfil de Github
+              </a>
+            </li>
+            <li class="navbar__list-item">
+              <a
+                class="cambia-color"
+                href="https://linkedin.com/in/matiaspecorale"
+              >
+                Perfil de Linkedin
+              </a>
+            </li>
           </ul>
         </nav>
-
+        <button class="btn-menu" id="btn-menu" aria-label="abrir menú">
+          <img src="assets/icons/menu.svg" alt="" width="30" height="30" />
+        </button>
         <div class="hero">
           <h1 class="hero__title">MATIAS PECORALE</h1>
           <p class="hero__description">Desarrollador full-stack</p>
