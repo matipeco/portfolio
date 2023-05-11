@@ -455,7 +455,7 @@ textarea {
   }
   .navbar__list-item a {
     margin: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     /* font-weight: 600; */
     color: transparent;
@@ -525,7 +525,9 @@ textarea {
 
   .section__habilidades {
     text-align: center;
+    padding-left: 2rem;
   }
+
   .titulo-habilidades {
     margin: 3rem 0 3rem;
     font-size: 4rem;
@@ -537,7 +539,7 @@ textarea {
     flex-wrap: wrap;
   }
   .container-icons article {
-    margin-right: 3.5rem;
+    margin-right: 3rem;
     height: 10rem;
   }
   .container-icons article img {
