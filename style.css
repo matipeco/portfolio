@@ -461,7 +461,6 @@ textarea::-webkit-input-placeholder {
     margin-bottom: 3rem;
     text-transform: uppercase;
     color: #65cf77;
-
     border-radius: 0;
     border-bottom: 0.1px solid #93d48535;
   }
