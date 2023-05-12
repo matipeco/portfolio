@@ -64,7 +64,7 @@ h6 {
   position: fixed;
   top: 0;
   width: 100%;
-  /* backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.01);
   letter-spacing: 2px;
   border-bottom: 1px solid rgba(34, 34, 34, 0.05);
@@ -290,11 +290,8 @@ h6 {
   margin-bottom: 1.5rem;
   font-size: 17px;
   text-transform: uppercase;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
   letter-spacing: 1px;
-  background-image: var(--gradient);
+  color: #65cf77;
 }
 article p {
   text-align: left;
@@ -396,10 +393,8 @@ textarea::-webkit-input-placeholder {
 }
 
 .button:hover span {
-  color: transparent;
-  background-image: var(--gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: #65cf77;
+  background-image: #222222;
 }
 
 .btn-menu {
@@ -465,11 +460,8 @@ textarea::-webkit-input-placeholder {
     margin: 0;
     margin-bottom: 3rem;
     text-transform: uppercase;
-    /* font-weight: 600; */
-    color: transparent;
-    background-image: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: #65cf77;
+
     border-radius: 0;
     border-bottom: 0.1px solid #93d48535;
   }
@@ -606,5 +598,14 @@ textarea::-webkit-input-placeholder {
     padding: 1.7rem;
     font-size: 1.5rem;
     background-color: #222222e6;
+  }
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .card-title,
+  .button:hover span {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: var(--gradient);
   }
 }
