@@ -40,7 +40,7 @@ if (screenWidth > 750) {
   };
 
   const options = {
-    threshold: [0.2, 0.8],
+    threshold: [0.3, 0.8],
   };
 
   const observarSeccion = (id) => {
@@ -53,7 +53,6 @@ if (screenWidth > 750) {
   };
 
   observarSeccion("sobre-mi");
-  // observarSeccion("habilidades");
 
   const observarProyectos = () => {
     const section = document.querySelector("#proyectos");
@@ -77,7 +76,7 @@ if (screenWidth > 750) {
           }
         });
       },
-      { threshold: [0.1, 0.5] }
+      { threshold: [0.4, 0.8] }
     );
 
     observer.observe(section);
