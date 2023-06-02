@@ -255,7 +255,7 @@ h6 {
 }
 
 .container-cards {
-  max-width: 108rem;
+  /* max-width: 140rem; */
   display: flex;
   align-items: center;
   justify-content: center;
