@@ -218,9 +218,11 @@ h6 {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  /* background-color: red; */
 }
 .container-icons article {
-  margin: 2rem 8rem 0 0;
+  /* background-color: yellow; */
+  margin: 2rem 7rem 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,17 +257,18 @@ h6 {
 }
 
 .container-cards {
-  /* max-width: 140rem; */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  /* border: 1px solid red; */
   flex-wrap: wrap;
 }
 
+.container-cards-2{
+  display: flex;
+  justify-content: center;
+}
+
 .container-cards article {
-  /* border: 1px solid red; */
   margin: 0 2rem 2rem;
   border-radius: 5px;
   padding: 2.5rem;
@@ -278,8 +281,7 @@ h6 {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 43rem;
-  min-height: 45rem;
+  max-height: 45rem;
 }
 
 .container-cards img {
@@ -559,6 +561,17 @@ textarea::-webkit-input-placeholder {
     background-color: #b3edbaa4;
     height: 0.3rem;
     margin-top: 1rem;
+  }
+
+  .container-cards{
+    display: flex;
+    flex-wrap: none;
+    align-items: none;
+    justify-content: none;
+    flex-direction: column;
+  }
+  .container-cards-2{
+    flex-direction: column;
   }
   .container-cards article {
     max-height: none;
