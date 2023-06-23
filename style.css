@@ -222,7 +222,7 @@ h6 {
 }
 .container-icons article {
   /* background-color: yellow; */
-  margin: 2rem 7rem 0 0;
+  margin: 2rem 4rem 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,8 +233,9 @@ h6 {
   font-size: 1.5rem;
   margin-top: 1.5rem;
   text-align: center;
-  width: 10ch;
+  width: 13ch;
   color: #222222;
+  /* background-color: green; */
 }
 
 .section__proyectos {
@@ -281,16 +282,15 @@ h6 {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 45rem;
+  /* height: 45rem; */
 }
 
 .container-cards img {
   width: 25rem;
-  margin-bottom: 2rem;
 }
 .card-title {
-  margin-bottom: 1.5rem;
-  font-size: 17px;
+  margin: 2rem 0 1.2rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #65cf77;
@@ -298,14 +298,15 @@ h6 {
 article p {
   text-align: left;
   width: 25rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   color: rgb(204, 204, 204);
+  line-height: 2.5rem;
 }
 .card-buttons {
   display: inline-block;
   font-size: 1.4rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1rem;
   text-decoration: none;
   background-color: rgba(92, 92, 92, 0.685);
@@ -534,12 +535,14 @@ textarea::-webkit-input-placeholder {
     font-size: 4rem;
   }
   .container-icons {
+    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
   .container-icons article {
+    /* background-color: yellow; */
     margin-right: 3rem;
     height: 10rem;
   }
@@ -547,9 +550,9 @@ textarea::-webkit-input-placeholder {
     width: 5rem;
     height: 5rem;
   }
-  .container-icons article:nth-child(3n + 3) {
+  /* .container-icons article:nth-child(3n + 3) {
     margin-right: 0;
-  }
+  } */
   .proyectos-titulo {
     margin: 4.5rem 0 5rem;
     font-size: 4rem;
