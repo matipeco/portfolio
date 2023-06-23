@@ -281,7 +281,7 @@ h6 {
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 45rem;
+  height: 45rem;
 }
 
 .container-cards img {
@@ -544,8 +544,8 @@ textarea::-webkit-input-placeholder {
     height: 10rem;
   }
   .container-icons article img {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
   }
   .container-icons article:nth-child(3n + 3) {
     margin-right: 0;
