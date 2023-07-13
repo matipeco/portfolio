@@ -265,6 +265,8 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 125rem;
+  gap: 5rem;
 }
 
 .container-cards-2{
@@ -587,9 +589,7 @@ textarea::-webkit-input-placeholder {
     justify-content: none;
     flex-direction: column;
   }
-  .container-cards-2{
-    flex-direction: column;
-  }
+  
   .container-cards article {
     max-height: none;
   }
