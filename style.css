@@ -266,7 +266,7 @@ h6 {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 125rem;
-  gap: 5rem;
+  gap: 7rem;
 }
 
 .container-cards-2{
@@ -275,7 +275,7 @@ h6 {
 }
 
 .container-cards article {
-  margin: 0 2rem 2rem;
+  
   border-radius: 5px;
   padding: 2.5rem;
   text-align: center;
