@@ -221,7 +221,7 @@ h6 {
   flex-wrap: wrap;
   max-width: 100rem;
   /* background-color: red; */
-  gap: 1rem 4rem ;
+  gap: 1rem 4rem;
 }
 .container-icons article {
   /* background-color: yellow; */
@@ -269,13 +269,12 @@ h6 {
   gap: 7rem;
 }
 
-.container-cards-2{
+.container-cards-2 {
   display: flex;
   justify-content: center;
 }
 
 .container-cards article {
-  
   border-radius: 5px;
   padding: 2.5rem;
   text-align: center;
@@ -547,7 +546,7 @@ textarea::-webkit-input-placeholder {
     flex-wrap: wrap;
   }
 
-  .container-icons p{
+  .container-icons p {
     font-size: 1.3rem;
   }
 
@@ -568,7 +567,7 @@ textarea::-webkit-input-placeholder {
     margin: 4.5rem 0 5rem;
     font-size: 4rem;
   }
-  .card-title{
+  .card-title {
     font-size: 1.8rem;
     /* outline: 1px solid red; */
     max-width: 25rem;
@@ -582,14 +581,14 @@ textarea::-webkit-input-placeholder {
     margin-top: 1rem;
   }
 
-  .container-cards{
+  .container-cards {
     display: flex;
     flex-wrap: none;
     align-items: none;
     justify-content: none;
     flex-direction: column;
   }
-  
+
   .container-cards article {
     max-height: none;
   }
