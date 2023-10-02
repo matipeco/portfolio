@@ -121,3 +121,32 @@ form.addEventListener("submit", function (event) {
     }
   );
 });
+
+///////////////////////////////////////////////
+//Modal Controls
+const modalByron = document.querySelector(".modal-byron");
+const btnOpenByron = document.querySelector(".open-byron");
+const btnCloseByron = document.querySelector(".modal-close-byron");
+
+function abrirModal() {
+  modalByron.style.display = "flex";
+}
+function cerrarModal() {
+  modalByron.style.display = "none";
+}
+function clickOutsideModal(event) {
+  if (event.target === modalByron) {
+    cerrarModal();
+  }
+}
+
+function pressEscapeKey(event) {
+  if (event.key === "Escape") {
+    cerrarModal();
+  }
+}
+
+btnOpenByron.addEventListener("click", abrirModal);
+btnCloseByron.addEventListener("click", cerrarModal);
+document.addEventListener("click", clickOutsideModal);
+document.addEventListener("keydown", pressEscapeKey);
