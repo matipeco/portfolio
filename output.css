@@ -676,10 +676,6 @@ textarea::-webkit-input-placeholder {
     justify-content: none;
     flex-direction: column;
   }
-  div {
-    display: none;
-    border: 1px solid green;
-  }
   .container-cards article {
     max-height: none;
   }
